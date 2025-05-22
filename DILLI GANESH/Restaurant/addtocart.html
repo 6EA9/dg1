@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart - Ganesh Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f8f8f8;
+    }
+
+    .cart-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .cart-item {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .cart-item span {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="cart-container">
+    <h1>Item Added to Cart</h1>
+
+    <div class="cart-item">
+      <p><span>Item:</span> <span id="item-name">Loading...</span></p>
+      <p><span>Price:</span> ₹<span id="item-price">0</span></p>
+    </div>
+
+    <div class="back-link">
+      <a href="Restaurant.html">← Back to Menu</a>
+    </div>
+  </div>
+
+  <script>
+    // Get URL query parameters
+    const params = new URLSearchParams(window.location.search);
+    const item = params.get('item');
+    const price = params.get('price');
+
+    // Set values to page
+    document.getElementById('item-name').textContent = item || "No item selected";
+    document.getElementById('item-price').textContent = price || "0";
+  </script>
+
+</body>
+</html>

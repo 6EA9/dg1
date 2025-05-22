@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form>
+    <label>First Name</label>
+    <input type="text" name="firstName" id="fn"><br>
+    <label>Last Name</label>
+    <input type="text" name="lastName" id="ln"><br>
+    <button type="button" onclick="ch()">Submit</button>
+  </form>
+
+  <script>
+    function ch() {
+      var a = parseInt(getElementById("fn")).value;
+      var b = parseInt(getElementById("ln")).value;
+      console.log(a + b);
+    }
+  </script>
+
+</body>
+</html>

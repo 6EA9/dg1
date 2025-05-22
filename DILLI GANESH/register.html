@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="logo.png"/>
+</head>
+<body background="y.jpg">
+    <hr><center><h1>Register Form</h1></center>
+    <hr>
+       <center> <table><form action="thankyou.html" method="post">
+        <tr>
+        <td><label for="First Name"><b>First Name</b></label>&emsp;</td>
+        <td><input type="text" id="First Name" name="first name"  placeholder="Enter the First Name"></td>
+        </tr>
+
+        <tr>
+        <td><label for="Last Name"><b>Last Name</b></label>&emsp;</td>
+        <td><input type="text" id="last Name" name="last name" placeholder="Enter the Last Name"></td>
+        </tr>
+
+        <tr>
+        <td><label for="Email"><b>Email</b></label>&emsp;</td>
+        <td><input type="email" id="Email" name="Email" placeholder="Enter the Email">&emsp;</td>
+        </tr>
+
+        <tr>
+        <td><label for="Phone"><b>Phone</b></label></td>
+        <td><input type="tel" id="Number" name="Number" maxlength="10" placeholder="Enter the Phone Number"></td>
+        </tr>
+
+        <tr>
+        <td><label for="Address"><b>Address</b></label></td>
+        <td><textarea id="Address " name="Address" placeholder="Enter the Address"></textarea></td>
+        </tr>
+
+        <tr>
+        <td><label for="DOB"><b>DOB</b></label></td>
+        <td><input type="date" id="DOB" name="DOB"></td>
+        </tr>
+
+        <tr>
+        <td><label for="Age"><b>Age</b></label>&emsp;</td>
+        <td><input type="number" id="age" name="Age" placeholder="Enter the Age"></td>
+        </tr>
+
+        <tr>
+        <td><h4>Gender</h4></td>
+        <td><input type="radio" id="Male" name="Gender">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender">
+        <label for="Female">Female</label></td>
+        </tr>
+
+        <tr>
+        <td><h4>Events</h4></td>
+        <td><label><input type="checkbox" name="events" value="Tech Talk"> Tech Talk</label>
+        <label><input type="checkbox" name="events" value="Workshop"> Workshop</label>
+        <label><input type="checkbox" name="events" value="Hackathon"> Hackathon</label>
+        <label><input type="checkbox" name="events" value="Seminar"> Seminar</label>
+        <label><input type="checkbox" name="events" value="Networking Session"> Networking Session</label></td>
+        </tr>
+        <tr>
+        <td><h4>Selected Day For The Event</h4></td>
+        <td>
+                <select name="Day" id="Monday">
+                    <option value="day">Monday</option>
+                    <option value="day">Tuesday</option>
+                    <option value="day">Wednesday</option>
+                    <option value="day">Thursday</option>
+                    <option value="day">Friday</option>
+                    <option value="day">Saturday</option>
+                    <option value="day">Sunday</option>
+                </select>
+        </td>
+        </tr>
+        </table>
+        <center><button><b>Register</b></button></center>
+        <br>
+        <tr>
+            <td>
+                <iframe src="https://www.wikipedia.org" frameborder="1" width="50%" ></iframe>
+            </td>
+        </tr>
+</form></center>
+<center>
+    
+<button onclick="change()">Alert</button></center>
+        <script>
+            var n =document.getElementById("age");
+            function change (){
+                alert ("Successfully Register In Wikipedia")
+            }
+        </script>
+        
+       <!--  <header><h1>hi! i am dilli ganesh</h1></header>
+        <aside><h1>hi! i am dilli ganesh</h1></aside>
+        <div><h1>hi! i am dilli ganesh</h1></div>
+        <footer><h1>hi! i am dilli ganesh</h1></footer>
+        <nav><h1>hi! i am dilli ganesh</h1></nav>
+        <article><h1>hi! i am dilli ganesh</h1></article>
+        <section><h1>hi! i am dilli ganesh</h1></section> -->
+</body>
+</html>

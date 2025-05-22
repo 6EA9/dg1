@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chocolate Cake - Sri Ganesh Chettinadu Restaurant</title>
+  <link rel="icon" href="logo.jpg"/>
+  <link rel="stylesheet" href="restaurant.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .product-page {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color: #fff;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .product-image {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product-details {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .product-details h1 {
+      margin-bottom: 10px;
+    }
+
+    .product-details p {
+      margin-bottom: 15px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .product-price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #b12704;
+    }
+
+    form button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #e67e22;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    form button:hover {
+      background-color: #cf711f;
+    }
+
+    .flex-info {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .details-section {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .details-section h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    ul {
+      margin: 0 0 20px 20px;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    .time-info p {
+      margin: 5px 0;
+      font-size: 15px;
+    }
+
+    .separator {
+      border-top: 2px solid #eee;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-page">
+    <img src="ChocolateCake.jpg" alt="Chocolate Cake with Ganache" class="product-image">
+
+    <div class="product-details">
+      <h1>Chocolate Cake with Ganache</h1>
+      <p><strong>Masters Of Kitchen</strong></p>
+      <p style="text-align: justify;">A rich and indulgent chocolate cake made with the finest cocoa and topped with a smooth, glossy ganache. Perfect for chocolate lovers and celebrations!</p>
+
+      <p class="product-price">Price: ₹100</p>
+
+      <form action="addtocart.html" method="get">
+        <input type="hidden" name="item" value="Chocolate Cake with Ganache">
+        <input type="hidden" name="price" value="100">
+        <button type="submit">Add to Cart</button>
+      </form>
+
+      <div class="flex-info">
+        <div class="details-section time-info">
+          <h3>Recipe Info</h3>
+          <p><strong>Prep Time:</strong> 20 minutes</p>
+          <p><strong>Cook Time:</strong> 30 minutes</p>
+          <p><strong>Total Time:</strong> 50 minutes</p>
+          <p><strong>Course:</strong> Dessert</p>
+          <p><strong>Cuisine:</strong> American, European</p>
+          <p><strong>Servings:</strong> 8</p>
+          <p><strong>Calories:</strong> 450 kcal (approx.)</p>
+        </div>
+
+        <div class="details-section">
+          <h3>Equipment</h3>
+          <ul>
+            <li>Oven</li>
+            <li>Mixing bowl</li>
+            <li>Whisk</li>
+            <li>Measuring cups and spoons</li>
+            <li>Cake pan</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="details-section">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>200g all-purpose flour</li>
+          <li>200g sugar</li>
+          <li>50g cocoa powder</li>
+          <li>1 tsp baking powder</li>
+          <li>2 large eggs</li>
+          <li>200ml whole milk</li>
+          <li>100g unsalted butter, melted</li>
+          <li>1 tsp vanilla extract</li>
+          <li>200g dark chocolate (for ganache)</li>
+          <li>100ml heavy cream</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

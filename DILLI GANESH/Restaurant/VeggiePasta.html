@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Veggie Pasta - Sri Ganesh Chettinadu Restaurant</title>
+  <link rel="icon" href="logo.jpg"/>
+  <link rel="stylesheet" href="restaurant.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .product-page {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color: #fff;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .product-image {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product-details {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .product-details h1 {
+      margin-bottom: 10px;
+    }
+
+    .product-details p {
+      margin-bottom: 15px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .product-price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #b12704;
+    }
+
+    form button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #e67e22;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    form button:hover {
+      background-color: #cf711f;
+    }
+
+    .flex-info {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .details-section {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .details-section h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    ul {
+      margin: 0 0 20px 20px;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    .time-info p {
+      margin: 5px 0;
+      font-size: 15px;
+    }
+
+    .separator {
+      border-top: 2px solid #eee;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-page">
+    <img src="VeggiePasta.jpg" alt="Veggie Pasta with Pesto" class="product-image">
+
+    <div class="product-details">
+      <h1>Veggie Pasta with Pesto</h1>
+      <p><strong>Masters Of Kitchen</strong></p>
+      <p style="text-align: justify;">A delightful pasta dish made with fresh vegetables and a rich, aromatic pesto sauce. Perfect for vegetarians and pasta lovers alike!</p>
+
+      <p class="product-price">Price: ₹150</p>
+
+      <form action="addtocart.html" method="get">
+        <input type="hidden" name="item" value="Veggie Pasta with Pesto">
+        <input type="hidden" name="price" value="150">
+        <button type="submit">Add to Cart</button>
+      </form>
+
+      <div class="flex-info">
+        <div class="details-section time-info">
+          <h3>Recipe Info</h3>
+          <p><strong>Prep Time:</strong> 10 minutes</p>
+          <p><strong>Cook Time:</strong> 15 minutes</p>
+          <p><strong>Total Time:</strong> 25 minutes</p>
+          <p><strong>Course:</strong> Main Course</p>
+          <p><strong>Cuisine:</strong> Italian</p>
+          <p><strong>Servings:</strong> 2</p>
+          <p><strong>Calories:</strong> 450 kcal (approx.)</p>
+        </div>
+
+        <div class="details-section">
+          <h3>Equipment</h3>
+          <ul>
+            <li>Large pot for pasta</li>
+            <li>Mixing bowl</li>
+            <li>Wooden spoon</li>
+            <li>Strainer</li>
+            <li>Chopping board and knife</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="details-section">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>200g pasta (penne, fusilli, or spaghetti)</li>
+          <li>1 tbsp olive oil</li>
+          <li>1 cup fresh basil leaves</li>
+          <li>2 tbsp pine nuts</li>
+          <li>1/2 cup grated Parmesan cheese</li>
+          <li>2 garlic cloves, minced</li>
+          <li>1 tbsp lemon juice</li>
+          <li>1 cup cherry tomatoes, halved</li>
+          <li>1/2 cup zucchini, diced</li>
+          <li>Salt and pepper to taste</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Grid Layout</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns: left, center, right */
+      grid-template-rows: repeat(2, auto);   /* 2 rows */
+      gap: 10px;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .grid-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      max-width: 100%;
+    }
+
+    /* Positioning images in the grid */
+    .item1 { grid-column: 1; grid-row: 1; } /* Left side */
+    .item2 { grid-column: 1; grid-row: 2; }
+
+    .item3 { grid-column: 2; grid-row: 1 / span 2; } /* Center, spans 2 rows */
+
+    .item4 { grid-column: 3; grid-row: 1; } /* Right side */
+    .item5 { grid-column: 3; grid-row: 2; }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <img src="s1.jpg" alt="Image 1" class="item1">
+    <img src="s2.jpg" alt="Image 2" class="item2">
+    <img src="s3.jpg" alt="Image 3" class="item3">
+    <img src="s4.jpg" alt="Image 4" class="item4">
+    <img src="s7.jpg" alt="Image 5" class="item5">
+  </div>
+</body>
+</html>

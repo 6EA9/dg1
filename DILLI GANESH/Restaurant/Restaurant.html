@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sri Ganesh Chettinadu Restaurant</title>
+  <link rel="icon" href="logo.jpg"/>
+  <link rel="stylesheet" href="restaurant.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="Restaurant.html">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Customer Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="order.html">Order Now</a>
+    <a href="login.html">Login</a>
+    <a href="addtocart.html">Add To Cart</a>
+  </nav>
+
+
+
+<header id="home">
+  <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <img src="logo.png" alt="Restaurant Logo" style="height:100px; margin-bottom:10px;">
+    <h1 style="margin-bottom: 0;">Sri Ganesh Chettinadu Restaurant</h1>
+    <p style="margin-top: 0;">Our Fresh & Flavorful Menu</p>
+  </div>
+</header>
+   <marquee class="offer-marquee" behavior="scroll" direction="left" scrollamount="10">
+     Special Offer: 50% OFF on Chicken Biryani! Now only ₹75. Hurry, limited time only! 
+  </marquee>
+
+  <section id="about" class="menu-section">
+    <h2>About Us</h2>
+    <p>Welcome to Ganesh Restaurant – your destination for authentic Indian flavors, comforting meals, and delicious desserts. We use only the freshest ingredients to bring you meals full of love and tradition.</p>
+  </section>
+  
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <!-- Starters -->
+    <div class="menu-category">
+      <h2>Starters</h2>
+      <div class="menu-items">
+
+        <div class="menu-item">
+            <a href="garlicbread.html" style="text-decoration: none; color: inherit;">
+          <img src="GarlicBread.webp" alt="Garlic Bread" class="item-image">
+          <div class="item-content">
+             <a href="garlicbread.html"></a>
+            <div class="item-name"><a href="order.html"></a>Garlic Bread <span class="item-price">₹50</span></div>
+            <div class="item-description">Crispy bread with garlic and herbs.</div>
+            </a>
+            <form action="addtocart.html" method="get">
+              <input type="hidden" name="item" value="Garlic Bread">
+              <input type="hidden" name="price" value="50">
+              <button type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="tomatosoup.html" style="text-decoration: none; color: inherit;">
+          <img src="TomatoSoup.jpg" alt="Tomato Soup" class="item-image">
+          <div class="item-content">
+            <div class="item-name">Tomato Soup <span class="item-price">₹60</span></div>
+            <div class="item-description">Served with a slice of toasted bread.</div>
+            </a>
+            <form action="addtocart.html" method="get">
+              <input type="hidden" name="item" value="Tomato Soup">
+              <input type="hidden" name="price" value="60">
+              <button type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Main Dishes -->
+    <div class="menu-category">
+      <h2>Main Dishes</h2>
+      <div class="menu-items">
+
+        <div class="menu-item">
+            <a href="grilledchicken.html" style="text-decoration: none; color: inherit;">
+          <img src="grilledchicken.webp" alt="Grilled Chicken" class="item-image">
+          <div class="item-content">
+            <div class="item-name">Grilled Chicken <span class="item-price">₹200</span></div>
+            <div class="item-description">Marinated chicken breast with veggies.</div></a>
+            <form action="addtocart.html" method="get">
+              <input type="hidden" name="item" value="Grilled Chicken">
+              <input type="hidden" name="price" value="200">
+              <button type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="veggiepasta.html" style="text-decoration: none; color: inherit;">
+          <img src="VeggiePasta.jpg" alt="Veggie Pasta" class="item-image">
+          <div class="item-content">
+            <div class="item-name">Veggie Pasta <span class="item-price">₹150</span></div>
+            <div class="item-description">Pasta with seasonal vegetables and tomato sauce.</div></a>
+            <form action="addtocart.html" method="get">
+              <input type="hidden" name="item" value="Veggie Pasta">
+              <input type="hidden" name="price" value="150">
+              <button type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-category">
+      <h2>Desserts</h2>
+      <div class="menu-items">
+
+        <div class="menu-item">
+            <a href="chocolatecake.html" style="text-decoration: none; color: inherit;">
+          <img src="ChocolateCake.jpg" alt="Chocolate Cake" class="item-image">
+          <div class="item-content">
+            <div class="item-name">Chocolate Cake<span class="item-price">₹100</span></div>
+            <div class="item-description">Rich chocolate cake with ganache topping.</div></a>
+            <form action="addtocart.html" method="get">
+              <input type="hidden" name="item" value="Chocolate Cake">
+              <input type="hidden" name="price" value="100">
+              <button type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="IceCreamSundae.html" style="text-decoration: none; color: inherit;">
+          <img src="Ice Cream Sundae.jpg" alt="Ice Cream Sundae" class="item-image">
+          <div class="item-content">
+            <div class="item-name">Ice Cream Sundae <span class="item-price">₹180</span></div>
+            <div class="item-description">Vanilla ice cream with chocolate syrup and nuts.</div></a>
+            <form action="addtocart.html" method="get">
+              <input type="hidden" name="item" value="Ice Cream Sundae">
+              <input type="hidden" name="price" value="180">
+              <button type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- More Menu -->
+    <div class="menu-category">
+      <h2>More Menu</h2>
+      <div class="menu-items">
+
+        <div class="menu-item">
+            <a href="paneertikka.html" style="text-decoration: none; color: inherit;">
+          <img src="PaneerTikka.jpg" alt="Paneer Tikka" class="item-image">
+          <div class="item-content">
+            <div class="item-name">Paneer Tikka <span class="item-price">₹120         </span></div>
+            <div class="item-description">Spicy grilled paneer with mint chutney.</div></a>
+            <form action="addtocart.html" method="get">
+              <input type="hidden" name="item" value="Paneer Tikka">
+              <input type="hidden" name="price" value="120">
+              <button type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="masaladosa.html" style="text-decoration: none; color: inherit;">
+          <img src="MasalaDosa.webp" alt="Masala Dosa" class="item-image">
+          <div class="item-content">
+            <div class="item-name">Masala Dosa <span class="item-price">₹70</span></div>
+            <div class="item-description">Crispy dosa with potato filling and sambar.</div></a>
+            <form action="addtocart.html" method="get">
+              <input type="hidden" name="item" value="Masala Dosa">
+              <input type="hidden" name="price" value="70">
+              <button type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="chickengbiryani.html" style="text-decoration: none; color: inherit;">
+          <img src="ChickenBiryani.jpg" alt="Chicken Biryani" class="item-image">
+          <div class="item-content">
+            <div class="item-name">Chicken Biryani <span class="item-price">₹150</span></div>
+            <div class="item-description">Fragrant rice with tender chicken and spices.</div></a>  
+            <form action="addtocart.html" method="get">
+              <input type="hidden" name="item" value="Chicken Biryani">
+              <input type="hidden" name="price" value="150">
+              <button type="submit">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="menu-section">
+    <h2>Gallery</h2>
+    <p>Explore some of our delicious dishes below!</p>
+    <div class="gallery-images">
+      <div class="gallery-item">
+        <img src="s1.jpg" alt="Dish 1" class="gallery-image">
+        <p class="gallery-text">BBQ Mutton Shoulder</p>
+      </div>
+      <div class="gallery-item">
+        <img src="s2.jpg" alt="Dish 2" class="gallery-image">
+        <p class="gallery-text">Red Chilly BBQ Chicken</p>
+      </div>
+      <div class="gallery-item">
+        <img src="s3.jpg" alt="Dish 3" class="gallery-image">
+        <p class="gallery-text">Grilled Fish</p>
+      </div>
+      <div class="gallery-item">
+        <img src="s4.jpg" alt="Dish 4" class="gallery-image">
+        <p class="gallery-text">Yemani Chicken Mandi</p>
+      </div>
+      <div class="gallery-item">
+        <img src="s7.jpg" alt="Dish 5" class="gallery-image">
+        <p class="gallery-text">Tandoori Tiger Prawn</p>
+      </div>
+      <div class="gallery-item">
+        <img src="s8.jpg" alt="Dish 6" class="gallery-image">
+        <p class="gallery-text">Seafood Platter</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Customer Reviews -->
+<section id="reviews" class="menu-section">
+  <h2>Customer Reviews</h2>
+  <div class="reviews-container">
+    <div class="review-card">
+      <img src="c2.png" alt="Priya S.">
+      <p>"The Chicken Biryani was absolutely delicious and the portion was generous. Will order again!"</p>
+      <div class="review-author">– Priya S</div>
+      <div class="review-stars">★★★★★</div>
+    </div>
+    <div class="review-card">
+      <img src="c1.png" alt="Arjun R.">
+      <p>"Loved the crispy Masala Dosa and the chutneys. Authentic taste and great service!"</p>
+      <div class="review-author">– Arjun R</div>
+      <div class="review-stars">★★★★★</div>
+    </div>
+    <div class="review-card">
+      <img src="c3.png" alt="Sneha M.">
+      <p>"Desserts are a must-try! The chocolate cake was rich and moist. Highly recommend."</p>
+      <div class="review-author">– Sneha M</div>
+      <div class="review-stars">★★★★★</div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="menu-section">
+    <h2>Contact Us</h2>
+    <b><p>Email: contact@ganeshrestaurant.com</p></b>
+    <b><p>Phone: +91 6379300449</p></b>
+    <h2>Location </h2>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31097.105569660296!2d80.19656185697762!3d13.026870289453013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52663a5230dc11%3A0x1e11a15f4abad604!2ssri%20Ganesh%20chettinadu%20Hotel!5e0!3m2!1sen!2sin!4v1747737617218!5m2!1sen!2sin" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+ <footer>
+  <div style="margin-bottom: 10px;">
+    <a href="https://facebook.com/" target="_blank" style="color:#4267B2; margin:0 10px; font-size:1.5em;">
+      <i class="fab fa-facebook-square"></i>
+    </a>
+    <a href="https://instagram.com/" target="_blank" style="color:#C13584; margin:0 10px; font-size:1.5em;">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/" target="_blank" style="color:#1DA1F2; margin:0 10px; font-size:1.5em;">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://whatsapp.com/" target="_blank" style="color:#25D366; margin:0 10px; font-size:1.5em;">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    </a>
+    <a href="https://youtube.com/" target="_blank" style="color:#FF0000; margin:0 10px; font-size:1.5em;">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://linkedin.com/" target="_blank" style="color:#0077B5; margin:0 10px; font-size:1.5em;">
+  <i class="fab fa-linkedin"></i>
+</a>
+  </div>
+  <p>&copy; 2025 Ganesh Restaurant. All rights reserved.</p>
+</footer>
+
+
+
+</body>
+</html>
